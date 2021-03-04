@@ -19,10 +19,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Im a react person</p>
+        {
+          products.map(pd =><Product product={pd}></Product>)
+        }
         <Product product={products[0]}></Product>
-        <Product product={products[1]}></Product>
-        <Product product={products[2]}></Product>
-        <Product product={products[3]}></Product>
         <br/>
         <br/>
         <br/>
